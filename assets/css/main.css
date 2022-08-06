@@ -1,6 +1,8 @@
 #header{
     height: 80px;
 		border-bottom: none;
+		background: #003462 !important;
+
 }
 
 ul{
@@ -16,6 +18,7 @@ border-bottom: none;
 #main {
   position: relative;
   border-bottom: none;
+	background: #0073DB;
 
 }
 #main li {
@@ -289,7 +292,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ffffff;
+			color: #b74e91 !important;
 		}
 
 	strong, b {
@@ -2656,7 +2659,7 @@ input, select, textarea {
 			display: block;
 			background: #ffffff;
 			border-radius: 100%;
-			color: #0053a0;
+			color: #ffffff;
 			text-align: center;
 			line-height: 2.5em;
 			margin: 0 0 1.3em 0;
@@ -2667,27 +2670,27 @@ input, select, textarea {
 			}
 
 				.wrapper.style1 .icon.major:before {
-					color: #0053a0;
+					color: #ffffff;
 				}
 
 				.wrapper.style1-alt .icon.major:before {
-					color: #0053a0;
+					color: #ffffff;
 				}
 
 				.wrapper.style2 .icon.major:before {
-					color: #0053a0;
+					color: #ffffff;
 				}
 
 				.wrapper.style2-alt .icon.major:before {
-					color: #0053a0;
+					color: #ffffff;
 				}
 
 				.wrapper.style3 .icon.major:before {
-					color: #0053a0;
+					color: #ffffff;
 				}
 
 				.wrapper.style3-alt .icon.major:before {
-					color: #0053a0;
+					color: #ffffff;
 				}
 
 /* Image */
@@ -3367,31 +3370,31 @@ input, select, textarea {
 			}
 
 		.wrapper.alt {
-			background-color: #0053a0;
+			background-color: #003462;
 		}
 
 		.wrapper.style1 {
-			background-color: #0053a0;
+			background-color: #0073DB;
 		}
 
 		.wrapper.style1-alt {
-			background-color: #493382;
+			background-color: #0073DB;
 		}
 
 		.wrapper.style2 {
-			background-color: #5052b5;
+			background-color: #1B5589;
 		}
 
 		.wrapper.style2-alt {
-			background-color: #3e4094;
+			background-color: #003462;
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background-color: #003462;
 		}
 
 		.wrapper.style3-alt {
-			background-color: #953d75;
+			background-color: #0B89FB;
 		}
 
 		.wrapper.fullscreen {
@@ -3660,11 +3663,17 @@ input, select, textarea {
 		margin: 0 auto;
 	}
 
-/* Sidebar */
+/* Sidebar Sub menu*/
+ #main {
+	background: #003462;
+}
 
+#footer{
+	background: #003462;
+}
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		background: #003462;
 		cursor: default;
 		height: 100vh;
 		left: 0;
