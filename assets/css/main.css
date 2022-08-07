@@ -2,13 +2,22 @@
     height: 80px;
 		border-bottom: none;
 		background: #003462 !important;
+		font-size: 113.5%;
 
 }
 
 ul{
 	list-style: none;
+	position: relative;
 }
 
+.drop ul{
+    position: relative;   /* add this */
+}
+
+.drop ul ul{
+    left: -2em;              /* add this */
+}
 a{
 text-decoration: none;
 outline:none;
@@ -24,7 +33,7 @@ border-bottom: none;
 #main li {
 	left: auto;
   position: relative;
-  padding: 10px 10px;
+  padding: 11px 11px;
   z-index: 5;
   min-width: 50px;
 }
@@ -35,8 +44,8 @@ border-bottom: none;
   list-style: none;
   position: absolute;
   padding: 0;
-  width: 155%;
-  left: 0;
+  width: 105%;
+  left: -2em;
   top: 42px;
 
 }
@@ -49,13 +58,14 @@ border-bottom: none;
   -moz-transition: all 0.5s 0.1s;
   -ms-transition: all 0.5s 0.1s;
   transition: all 0.5s 0.1s;
+	left: -2em;
 
 }
 .drop li {
   display: block;
   padding: 0;
   width: 100%;
-  background: #3e8760 !important;
+  background: #0054A0 !important;
 }
 
 #marker {
