@@ -1,3 +1,5 @@
+
+
 .fade-in-text {
   font-family: Arial;
   font-size: 60px;
@@ -85,6 +87,7 @@ border-bottom: none;
   padding: 11px 11px;
   z-index: 5;
   min-width: 50px;
+
 }
 
 
@@ -2051,7 +2054,7 @@ input, select, textarea {
 		margin-bottom: 1em;
 		padding: 1.5em;
     width: 15.5em;
-
+    background-color: #1E5484;
 
 	}
 
@@ -3625,7 +3628,7 @@ input, select, textarea {
 		display: flex;
 		background-color: #5e42a6;
 		cursor: default;
-		padding: 1.75em 2em;
+		padding: .9em 2em;
 	}
 
 		#header > .title {
