@@ -1,8 +1,6 @@
 
 
 .fade-in-text {
-  font-family: Arial;
-  font-size: 60px;
   animation: fadeIn 2s;
   -webkit-animation: fadeIn 2s;
   -moz-animation: fadeIn 2s;
@@ -79,6 +77,15 @@ border-bottom: none;
   position: relative;
   border-bottom: none;
 	background: #0073DB;
+
+
+}
+
+#main {
+  position: relative;
+  border-bottom: none;
+	background: #0073DB;
+
 
 }
 #main li {
@@ -278,11 +285,20 @@ input, select, textarea {
 
 	@-ms-viewport {
 		width: device-width;
+    zoom: 1.0 ;
 	}
 
 	body {
 		-ms-overflow-style: scrollbar;
 	}
+
+  @media only screen and (max-width: 600px) {
+
+    header nav li ul main a section div{
+      display: none;
+    }
+
+  }
 
 	@media screen and (max-width: 480px) {
 
@@ -566,6 +582,15 @@ input, select, textarea {
 
   			.container {
   				width: 100%;
+  			}
+
+  		}
+
+      @media screen and (max-width: 300px) {
+
+  			.header {
+  				width: 10%;
+          position: flex;
   			}
 
   		}
@@ -2846,11 +2871,24 @@ input, select, textarea {
 			margin: 0 0 1em 1.5em;
 			top: 0.25em;
 		}
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 60%;
 
+    }
+    #centableau {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 60%;
+    }
 		.image.fit {
 			display: block;
 			margin: 0 0 2em 0;
-			width: 100%;
+			width: 50%;
+      align: center;
 		}
 
 			.image.fit img {
@@ -3082,6 +3120,7 @@ input, select, textarea {
 				}
 
 /* Menu */
+
 
 	ul.menu {
 		list-style: none;
@@ -3618,9 +3657,22 @@ input, select, textarea {
 		}
 
 /* Header */
-#subnav {
-   display: block;
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
 }
+
+.nav{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: var(--black);
+    overflow: hidden;
+
+}
+
+
 	#header {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -3629,6 +3681,9 @@ input, select, textarea {
 		background-color: #5e42a6;
 		cursor: default;
 		padding: .9em 2em;
+    width: 100%;
+
+
 	}
 
 		#header > .title {
@@ -3659,6 +3714,7 @@ input, select, textarea {
 					margin-left: 1.75em;
 					padding: 0;
 					vertical-align: middle;
+
 				}
 
 					#header > nav > ul > li:first-child {
@@ -3694,35 +3750,169 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
 
-			#header {
-				display: block;
-				padding: 0 2em;
-				text-align: left;
-			}
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
 
-				#header .title {
-					font-size: 1.25em;
-					padding: 1em 0;
-				}
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
 
-				#header > nav {
-					border-top: solid 1px rgba(255, 255, 255, 0.15);
-					text-align: inherit;
+.open .bar2 {
+  opacity: 0;
+}
 
-				}
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
 
-					#header > nav > ul > li {
-						margin-left: 1.5em;
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
 
-					}
+.mobile-menu {
+  display: none;
+  top: 10px;
+  right: 120%;
 
-						#header > nav > ul > li a {
-							height: 6em;
-							line-height: 6em;
-						}
+}
 
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+
+
+		@media only screen and (max-width: 480px) {
+
+      #header nav {
+  display: none;
+}
+
+#hamburger-icon {
+ display: block;
+ right: inherit;
+}
+
+header a {
+  text-decoration: none;
+}
+
+#header {
+  position: relative;
+  justify-content: space-between;
+  height: fit-content;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: white;
+}
+
+
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+
+}
+
+#login,
+#signup {
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+
+#login {
+  border: 1px solid #498afb;
+}
+
+#signup {
+  border: 1px solid #ff3860;
+}
+
+#signup a {
+  color: #ff3860;
+}
+
+#login a {
+  color: #498afb;
+}
+
+/* Style the navigation menu */
+.topnav {
+ overflow: hidden;
+ background-color: #333;
+ position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+ display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+ color: white;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 17px;
+ display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+ background: black;
+ display: block;
+ position: absolute;
+ right: 0;
+ top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+ background-color: #ddd;
+ color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+ background-color: #04AA6D;
+ color: white;
+}
 		}
 
 /* Wrapper (main) */
