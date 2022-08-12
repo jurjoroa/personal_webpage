@@ -3751,7 +3751,7 @@ ul li:hover {
 		}
 
 #hamburger-icon {
-  margin: auto 0;
+  margin: 0 20px;
   display: none;
   cursor: pointer;
 }
@@ -3762,6 +3762,7 @@ ul li:hover {
   background-color: white;
   margin: 6px 0;
   transition: 0.4s;
+
 }
 
 .open .bar1 {
@@ -3779,26 +3780,32 @@ ul li:hover {
 }
 
 .open .mobile-menu {
-  display: flex;
+  display: block;
   flex-direction: column;
-  align-items: center;
+  align-items:   stretch;
   justify-content: flex-start;
 }
 
 .mobile-menu {
   display: none;
   top: 10px;
-  right: 120%;
+  left: -65%;
+  width: auto;
 
 }
 
 .mobile-menu li {
-  margin-bottom: 10px;
+  margin-bottom: 27px;
 }
 
 
-
 		@media only screen and (max-width: 480px) {
+
+      a, a:active, a:focus {
+        outline: none;
+        border: none;
+        -moz-outline-style: none;
+      }
 
       #header nav {
   display: none;
@@ -3806,113 +3813,37 @@ ul li:hover {
 
 #hamburger-icon {
  display: block;
- right: inherit;
-}
-
-header a {
-  text-decoration: none;
 }
 
 #header {
-  position: relative;
-  justify-content: space-between;
+
+  justify-content:center;
   height: fit-content;
+  margin: 0;
 }
 
-#brand {
-  font-weight: bold;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-}
+.major{
+margin: 0;
+padding: 0;
 
-#brand a {
-  color: #ffffff;
+}
+#wrapper {
+  height: 1px;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
   list-style: none;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
 }
-
-ul a {
-  color: white;
-}
-
 
 
 ul li:hover {
   transform: scale(1.1);
   transition: 0.3s;
-
 }
 
-#login,
-#signup {
-  border-radius: 5px;
-  padding: 5px 8px;
-}
 
-#login {
-  border: 1px solid #498afb;
-}
-
-#signup {
-  border: 1px solid #ff3860;
-}
-
-#signup a {
-  color: #ff3860;
-}
-
-#login a {
-  color: #498afb;
-}
-
-/* Style the navigation menu */
-.topnav {
- overflow: hidden;
- background-color: #333;
- position: relative;
-}
-
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
- display: none;
-}
-
-/* Style navigation menu links */
-.topnav a {
- color: white;
- padding: 14px 16px;
- text-decoration: none;
- font-size: 17px;
- display: block;
-}
-
-/* Style the hamburger menu */
-.topnav a.icon {
- background: black;
- display: block;
- position: absolute;
- right: 0;
- top: 0;
-}
-
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
- background-color: #ddd;
- color: black;
-}
-
-/* Style the active link (or home/logo) */
-.active {
- background-color: #04AA6D;
- color: white;
-}
 		}
 
 /* Wrapper (main) */
