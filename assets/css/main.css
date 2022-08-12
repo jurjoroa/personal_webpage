@@ -3798,7 +3798,12 @@ ul li:hover {
   margin-bottom: 27px;
 }
 
-
+#sticky {
+  padding: 15px;
+  background: grey;
+  position: sticky;
+  bottom: 0;
+}
 		@media only screen and (max-width: 480px) {
 
       a, a:active, a:focus {
@@ -3809,6 +3814,14 @@ ul li:hover {
 
       #header nav {
   display: none;
+}
+.menu .footer{
+  position: static;
+
+}
+
+#sidebar + #wrapper + #footer {
+  margin: 0;
 }
 
 #hamburger-icon {
@@ -3822,19 +3835,20 @@ ul li:hover {
   margin: 0;
 }
 
-.major{
-margin: 0;
-padding: 0;
 
-}
-#wrapper {
-  height: 1px;
+#wrapper-alt{
+  height: 3px;
   margin: 0;
   padding: 0;
 }
 
-ul {
+#wrapper-alt{
+bottom: 0;
+}
+
+ul li{
   list-style: none;
+bottom:0px;
 }
 
 
